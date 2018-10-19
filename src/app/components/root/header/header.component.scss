@@ -1,0 +1,62 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/media-queries";
+
+.header-container {
+  margin: 0;
+  padding: 1rem;
+  background: $header-background;
+  color: $black-color;
+
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 6rem 1fr 6rem;
+  grid-template-areas:
+                      "header-logo . header-navigation-button"
+                      "header-navigation header-navigation header-navigation";
+
+  .logo-wrapper {
+    grid-area: header-logo;
+  }
+
+  .navigation-wrapper {
+    grid-area: header-navigation;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .login-wrapper {
+    grid-area: header-navigation-button;
+    justify-self: end;
+  }
+}
+
+@include respond-above(xs) {
+  .header-container {
+    grid-template-columns: 6rem 1fr;
+    grid-template-areas:
+      "header-logo header-navigation";
+
+    .login-wrapper {
+      display: none;
+    }
+
+    .navigation-wrapper {
+      ul {
+        text-align: right;
+        li {
+          display: inline;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+}
