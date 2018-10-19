@@ -12,6 +12,8 @@ import {AppRoutingModule} from './modules/app-routing/app-routing.module';
 import { BlogComponent } from './components/blog/blog/blog.component';
 import { HelpComponent } from './components/help/help/help.component';
 import { FeedbackComponent } from './components/feedback/feedback/feedback.component';
+import { FilterComponent } from './components/home/filter/filter.component';
+import { FeedsListComponent } from './components/home/feeds-list/feeds-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FeedbackComponent } from './components/feedback/feedback/feedback.compo
     SiteComponent,
     BlogComponent,
     HelpComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    FilterComponent,
+    FeedsListComponent
   ],
   imports: [
     BrowserModule,

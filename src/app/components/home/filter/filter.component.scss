@@ -1,0 +1,18 @@
+@import "../../../../scss/variables";
+
+.filter-container {
+  padding: 0.5rem;
+  text-align: right;
+  justify-items: right;
+  font-size: 0.7rem;
+
+  .first-circle {
+    margin: 0 0.2rem 0 0;
+    color: $purple-color;
+  }
+
+  .last-circle {
+    margin: 0 0.4rem 0 0;
+    color: #f32c45;
+  }
+}
