@@ -1,65 +1,20 @@
 @import "../../../../scss/variables";
 @import "../../../../scss/media-queries";
 
-.site {
+.home {
   max-width: 120rem;
 
   display: grid;
-  grid-template-columns: 1fr 25rem;
   grid-template-rows: auto auto;
   grid-template-areas:
-                      "header header"
-                      "navigation navigation"
-                      "main main";
+                      "header"
+                      "content";
 
   .header {
     grid-area: header;
   }
 
-  .navigation {
-    font-size: 0.8rem;
-    grid-area: navigation;
-  }
-
-  .main {
-    display: grid;
-    grid-area: main;
-    grid-template-rows: auto auto;
-  }
-
-  .sidebar {
-    display: none;
-    padding: 0.8rem;
-    border: 5px solid red;
-
-    grid-area: sidebar;
-  }
-}
-
-@include respond-above(xs) {
-  .site {
-    grid-template-columns: 1fr 16rem;
-    grid-template-areas:
-                      "header header"
-                      "navigation navigation"
-                      "main sidebar";
-
-    .navigation {
-      font-size: 1rem;
-    }
-
-    .sidebar {
-      display: block;
-    }
-  }
-}
-
-@include respond-above(md) {
-  .site {
-    grid-template-columns: 1fr 25rem;
-
-    .sidebar {
-      display: block;
-    }
+  .content {
+    grid-area: content;
   }
 }

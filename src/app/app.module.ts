@@ -7,17 +7,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/root/header/header.component';
 import { HomeComponent } from './components/home/home/home.component';
 import { NavbarComponent } from './components/home/navbar/navbar.component';
+import { SiteComponent } from './components/home/site/site.component';
+import {AppRoutingModule} from './modules/app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    SiteComponent
   ],
   imports: [
     BrowserModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

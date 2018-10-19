@@ -1,0 +1,41 @@
+@import "../../../../scss/media-queries";
+
+.site-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+
+  grid-template-areas:
+                      "navigation"
+                      "main";
+  .navigation {
+    grid-area: navigation;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@include respond-above(xs) {
+  .site-container {
+    grid-template-columns: 1fr 16rem;
+    grid-template-areas:
+                        "navigation navigation"
+                        "main sidebar";
+
+    .sidebar {
+      display: block;
+    }
+  }
+}
+
+@include respond-above(md) {
+  .site-container {
+    grid-template-columns: 1fr 25rem;
+  }
+}
