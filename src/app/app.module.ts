@@ -9,6 +9,9 @@ import { HomeComponent } from './components/home/home/home.component';
 import { NavbarComponent } from './components/home/navbar/navbar.component';
 import { SiteComponent } from './components/home/site/site.component';
 import {AppRoutingModule} from './modules/app-routing/app-routing.module';
+import { BlogComponent } from './components/blog/blog/blog.component';
+import { HelpComponent } from './components/help/help/help.component';
+import { FeedbackComponent } from './components/feedback/feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import {AppRoutingModule} from './modules/app-routing/app-routing.module';
     HeaderComponent,
     HomeComponent,
     NavbarComponent,
-    SiteComponent
+    SiteComponent,
+    BlogComponent,
+    HelpComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
