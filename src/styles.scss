@@ -3,6 +3,6 @@
 @import "scss/type";
 @import "scss/media-queries";
 
-.site {
-  max-width: 120rem;
+body {
+  background: $body-background;
 }

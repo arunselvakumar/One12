@@ -1,0 +1,35 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/media-queries";
+
+.navbar-container {
+  margin: 0;
+  padding: 0.5rem;
+  background: $white-color;
+  .navigation-wrapper {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline;
+        margin-right: 1rem;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@include respond-above(xs) {
+  .navbar-container {
+    padding: 0.8rem;
+    .navigation-wrapper {
+      ul {
+        li {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
