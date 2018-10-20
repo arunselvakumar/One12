@@ -23,9 +23,9 @@
   }
 }
 
-@include respond-above(xs) {
+@include respond-above(md) {
   .site-container {
-    grid-template-columns: 1fr 16rem;
+    grid-template-columns: 1fr 20rem;
     grid-template-areas:
                         "navigation navigation"
                         "main sidebar";
@@ -33,11 +33,5 @@
     .sidebar {
       display: block;
     }
-  }
-}
-
-@include respond-above(md) {
-  .site-container {
-    grid-template-columns: 1fr 25rem;
   }
 }

@@ -16,6 +16,9 @@ import { FeedbackComponent } from './components/feedback/feedback/feedback.compo
 import { FilterComponent } from './components/home/filter/filter.component';
 import { FeedsListComponent } from './components/home/feeds-list/feeds-list.component';
 import { ImageCardComponent } from './components/shared/image-card/image-card.component';
+import { TagsListComponent } from './components/home/tags-list/tags-list.component';
+import { SidebarComponent } from './components/home/sidebar/sidebar.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { ImageCardComponent } from './components/shared/image-card/image-card.co
     FeedbackComponent,
     FilterComponent,
     FeedsListComponent,
-    ImageCardComponent
+    ImageCardComponent,
+    TagsListComponent,
+    SidebarComponent,
+    PostComponent
   ],
   imports: [
     AdsenseModule.forRoot({ adClient: 'ca-pub-6185517953080782', adSlot: 6187145078 }),

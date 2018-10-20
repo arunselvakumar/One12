@@ -1,0 +1,91 @@
+@import "../../../scss/media-queries";
+@import "../../../scss/variables";
+
+.post-container {
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+                    "title"
+                    "ad-section"
+                    "content"
+                    "post-details"
+                    "comments";
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    grid-area: title;
+  }
+
+  .content {
+    grid-area: content;
+    align-self: center;
+    justify-self: center;
+
+    img {
+      max-width: 100%;
+      max-height: 320px;
+    }
+  }
+
+  .post-details {
+    grid-area: post-details;
+
+    .ad-section {
+      display: none;
+      grid-area: ad-section;
+    }
+  }
+
+  .comments {
+    grid-area: comments;
+  }
+}
+
+@include respond-above(xs) {
+  .post-container {
+
+    grid-template-columns: 1fr 20rem;
+    grid-template-rows: auto auto auto auto;
+
+    grid-template-areas: "title title"
+    "content post-details"
+    "comments comments";
+
+    .post-details {
+      .ad-section {
+        display: block;
+      }
+    }
+
+    .content {
+      img {
+        max-height: 480px;
+      }
+    }
+  }
+}
+
+@include respond-above(md) {
+  .post-container {
+    .content {
+      img {
+        max-height: 620px;
+      }
+    }
+  }
+}
+
+@include respond-above(xl) {
+  .post-container {
+    .content {
+      img {
+        max-height: 900px;
+      }
+    }
+  }
+}
