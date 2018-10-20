@@ -1,0 +1,70 @@
+@import "../../../../scss/variables";
+
+.post {
+  background: $white-color;
+  padding: 0.4rem;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .avatar {
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+    }
+
+    .user {
+      margin-left: 0.5rem;
+      align-self: center;
+      flex-grow: 4;
+
+      .time {
+        font-size: 0.8rem;
+        color: $darkgrey-color;
+      }
+    }
+
+    .options {
+      font-size: 0.5rem;
+
+      .first-circle {
+        margin: 0 0.2rem 0 0;
+        color: $darkblue-color;
+      }
+
+      .last-circle {
+        margin: 0 0.4rem 0 0;
+        color: #e84e46;
+      }
+    }
+  }
+
+  .content {
+    padding: 0.5rem 0;
+
+    .title {
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+    }
+
+    .image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+
+    span {
+      margin-right: 0.8rem;
+    }
+  }
+}

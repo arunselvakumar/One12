@@ -1,24 +1,11 @@
 @import "../../../../scss/media-queries";
+@import "../../../../scss/variables";
 
 .feeds-list-container {
-  padding: 0;
+  padding: 0.6rem;
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 0.6rem;
   grid-template-columns: 1fr;
-
-  .post {
-    background: hotpink;
-    .header {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-
-      .time {
-        align-self: flex-end;
-        text-align: right;
-      }
-    }
-  }
 }
 
 @include respond-above(xs) {
@@ -33,7 +20,7 @@
   }
 }
 
-@include respond-above(md) {
+@include respond-above(xl) {
   .feeds-list-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

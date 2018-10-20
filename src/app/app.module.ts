@@ -14,6 +14,7 @@ import { HelpComponent } from './components/help/help/help.component';
 import { FeedbackComponent } from './components/feedback/feedback/feedback.component';
 import { FilterComponent } from './components/home/filter/filter.component';
 import { FeedsListComponent } from './components/home/feeds-list/feeds-list.component';
+import { ImageCardComponent } from './components/shared/image-card/image-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FeedsListComponent } from './components/home/feeds-list/feeds-list.comp
     HelpComponent,
     FeedbackComponent,
     FilterComponent,
-    FeedsListComponent
+    FeedsListComponent,
+    ImageCardComponent
   ],
   imports: [
     BrowserModule,
