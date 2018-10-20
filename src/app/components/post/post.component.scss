@@ -1,5 +1,6 @@
 @import "../../../scss/media-queries";
 @import "../../../scss/variables";
+@import "../../../scss/type";
 
 .post-container {
   padding: 1rem;
@@ -34,6 +35,28 @@
 
   .post-details {
     grid-area: post-details;
+
+    .widget {
+      display: grid;
+
+      background: $white-color;
+      padding: 0.5rem;
+      grid-template-columns: 1fr 1fr;
+
+      .user {
+        img {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+        }
+      }
+
+      .stats {
+        section {
+          margin: 0.5rem 0;
+        }
+      }
+    }
 
     .ad-section {
       display: none;
