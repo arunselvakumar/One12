@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostModel } from '../../../models/post.model';
 
 @Component({
   selector: 'app-feeds-list',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feeds-list.component.scss']
 })
 export class FeedsListComponent implements OnInit {
+  post: PostModel;
 
-  constructor() { }
+  constructor() {
+    this.post = new PostModel();
+    this.post.title = 'Shabba';
+  }
 
   ngOnInit() {
   }

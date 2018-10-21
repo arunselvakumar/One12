@@ -1,6 +1,6 @@
 import {CommentsListModel} from './comments-list.model';
 
-export interface PostModel {
+export class PostModel {
   id: string;
   title: string;
   type: string;

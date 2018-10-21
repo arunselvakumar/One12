@@ -8,11 +8,13 @@ import { PostModel } from '../../../models/post.model';
   styleUrls: ['./image-card.component.scss']
 })
 export class ImageCardComponent implements OnInit {
-  @Input('dataContext') dataContext: PostModel;
+  @Input() dataContext: PostModel;
 
   constructor() {
+    // console.log(this.dataContext.title);
   }
 
   ngOnInit() {
+    console.log(this.dataContext.title);
   }
 }
