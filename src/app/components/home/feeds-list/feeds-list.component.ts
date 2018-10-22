@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+
 import { PostModel } from '../../../models/post.model';
 
 @Component({
@@ -9,7 +11,7 @@ import { PostModel } from '../../../models/post.model';
 export class FeedsListComponent implements OnInit {
   post: PostModel;
 
-  constructor() {
+  constructor(http: Http) {
     this.post = new PostModel();
     this.post.title = 'Shabba';
   }
