@@ -2,7 +2,7 @@ import { HttpHeaders } from '@angular/common/http';
 
 export class ApiConfig {
 
-  static API_DEFAULT_URL = 'http://localhost:51422/api';
+  static API_DEFAULT_URL = 'http://localhost:51422/';
 
   protected headers = {
     headers: this.setHeaders()
