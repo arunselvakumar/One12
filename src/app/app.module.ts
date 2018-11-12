@@ -20,6 +20,7 @@ import { ImageCardComponent } from './components/shared/image-card/image-card.co
 import { TagsListComponent } from './components/home/tags-list/tags-list.component';
 import { SidebarComponent } from './components/home/sidebar/sidebar.component';
 import { PostComponent } from './components/post/post.component';
+import { ProfileRootComponent } from './components/user/profile-root/profile-root.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PostComponent } from './components/post/post.component';
     ImageCardComponent,
     TagsListComponent,
     SidebarComponent,
-    PostComponent
+    PostComponent,
+    ProfileRootComponent
   ],
   imports: [
     AdsenseModule.forRoot({ adClient: 'ca-pub-6185517953080782', adSlot: 6187145078 }),
