@@ -21,6 +21,7 @@ import { TagsListComponent } from './components/home/tags-list/tags-list.compone
 import { SidebarComponent } from './components/home/sidebar/sidebar.component';
 import { PostComponent } from './components/post/post.component';
 import { ProfileRootComponent } from './components/user/profile-root/profile-root.component';
+import { ProfileHeaderComponent } from './components/user/profile-header/profile-header.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ProfileRootComponent } from './components/user/profile-root/profile-roo
     TagsListComponent,
     SidebarComponent,
     PostComponent,
-    ProfileRootComponent
+    ProfileRootComponent,
+    ProfileHeaderComponent
   ],
   imports: [
     AdsenseModule.forRoot({ adClient: 'ca-pub-6185517953080782', adSlot: 6187145078 }),
