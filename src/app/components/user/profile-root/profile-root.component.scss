@@ -1,0 +1,19 @@
+.profile-container {
+  display: grid;
+
+  grid-template-rows: auto auto;
+
+  grid-template-areas:
+                      "profile-header"
+                      "profile-navigation";
+
+  .profile-header-wrapper {
+
+    grid-area: profile-header;
+
+  }
+
+  .profile-navigation-wrapper {
+    grid-area: profile-navigation;
+  }
+}

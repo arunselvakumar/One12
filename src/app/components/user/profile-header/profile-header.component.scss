@@ -16,10 +16,14 @@
     grid-template-rows: auto;
     grid-template-columns: 15rem auto;
 
-
     grid-template-areas:
                         "profile-masthead"
                         "profile-details";
   }
 
+  .profile-details {
+
+    background: #404A53;
+
+  }
 }

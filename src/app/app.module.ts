@@ -22,6 +22,8 @@ import { SidebarComponent } from './components/home/sidebar/sidebar.component';
 import { PostComponent } from './components/post/post.component';
 import { ProfileRootComponent } from './components/user/profile-root/profile-root.component';
 import { ProfileHeaderComponent } from './components/user/profile-header/profile-header.component';
+import { ProfileMastheadComponent } from './components/user/profile-masthead/profile-masthead.component';
+import { ProfileDetailsComponent } from './components/user/profile-details/profile-details.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ProfileHeaderComponent } from './components/user/profile-header/profile
     SidebarComponent,
     PostComponent,
     ProfileRootComponent,
-    ProfileHeaderComponent
+    ProfileHeaderComponent,
+    ProfileMastheadComponent,
+    ProfileDetailsComponent
   ],
   imports: [
     AdsenseModule.forRoot({ adClient: 'ca-pub-6185517953080782', adSlot: 6187145078 }),
