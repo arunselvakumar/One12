@@ -1,0 +1,25 @@
+.profile-masthead-container {
+
+  display: grid;
+  grid-gap: 0.4rem;
+  padding: 0.6rem;
+  text-align: center;
+
+  .profile-image-wrapper {
+
+    .profile-image {
+      height: 12rem;
+      width: 12rem;
+
+      border-radius: 50%;
+    }
+  }
+
+
+  .profile-name {
+
+    font-size: 1.2rem;
+
+  }
+
+}

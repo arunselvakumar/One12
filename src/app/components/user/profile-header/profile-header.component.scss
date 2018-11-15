@@ -4,6 +4,8 @@
 
 .profile-header-container {
 
+  color: $white-color;
+
   display: grid;
   grid-template-rows: auto auto;
 
@@ -21,9 +23,13 @@
                         "profile-details";
   }
 
+  .profile-masthead-wrapper {
+    background: $profile-masthead-background;
+  }
+
   .profile-details {
 
-    background: #404A53;
+    background: $profile-details-background;
 
   }
 }
