@@ -5,7 +5,28 @@
   grid-gap: 0.3rem;
 
   .profile-aboutme-header {
+
     font-weight: bold;
+
+  }
+
+  .profile-misc-container {
+
+    padding: 0.6rem 0rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    align-self: end;
+
+    .header {
+
+      font-weight: bold;
+
+    }
+
+    .content {
+      margin: 0rem 0.5rem;
+    }
+
   }
 
 }
