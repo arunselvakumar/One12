@@ -1,0 +1,28 @@
+@import "~src/scss/media-queries";
+@import "~src/scss/variables";
+@import "~src/scss/type";
+
+.profile-navigation-container {
+  background: $white-color;
+  text-align: center;
+  padding: 1.2rem;
+
+  ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+
+      display: inline;
+      margin-right: 3rem;
+
+      a {
+
+        text-decoration: none;
+
+      }
+    }
+  }
+}
