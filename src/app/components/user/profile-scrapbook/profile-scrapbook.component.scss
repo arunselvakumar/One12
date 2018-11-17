@@ -1,0 +1,81 @@
+@import "~src/scss/variables";
+@import "~src/scss/type";
+
+.profile-scrapbook-container {
+
+  text-align: center;
+  color: $darkgrey-color;
+
+  .profile-scrapbook-header {
+
+    padding: 1rem;
+
+    .scrapbook-header-label {
+
+      font-size: 1.2rem;
+
+    }
+
+    .scrapbook-header-description {
+
+      font-size: 1.1rem;
+      margin: 0.4rem 0rem;
+
+    }
+
+  }
+
+  .scrapbook-editor-wrapper {
+
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+                        ". scrapbook-area ."
+                        ". scrapbook-button-area .";
+
+
+    .scrapbook-editor {
+
+      grid-area: scrapbook-area;
+      border: 1px solid rgba(34,36,38,.15);
+      color: rgba(0,0,0,.87);
+      border-radius: 0.2rem;
+      resize: none;
+      padding: 1rem;
+
+    }
+
+    .btn {
+
+      grid-area: scrapbook-button-area;
+      width: 5rem;
+      align-self: end;
+      justify-self: end;
+
+    }
+
+  }
+
+  .scrapbook-scraps-wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+                        ". scraps-area .";
+
+
+    .scrapbook-scraps {
+
+      grid-area: scraps-area;
+      display: grid;
+      text-align: left;
+
+      grid-gap: 0.5rem;
+      padding: 0.5rem;
+    }
+
+  }
+
+}
