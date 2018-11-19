@@ -15,8 +15,7 @@ const rootRoutes: Routes = [
   { path: 'help', component: HelpComponent },
   { path: 'feedback', component: FeedbackComponent },
   { path: '', component: SiteComponent },
-  { path: 'home', redirectTo: '' },
-  { path: 'home', redirectTo: '' },
+  { path: 'feeds/:filter', component: SiteComponent },
   { path: '**', redirectTo: '' }
 ];
 
