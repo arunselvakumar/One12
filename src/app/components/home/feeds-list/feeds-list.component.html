@@ -1,13 +1,7 @@
 <section class="feeds-list-container">
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
-  <app-image-card></app-image-card>
+  <article *ngFor="let post of postsList">
+    <app-image-card [title]="post.title"
+                    [displayName]="post.id"
+                    [imgSrc]="post.content"></app-image-card>
+  </article>
 </section>

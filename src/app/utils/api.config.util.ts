@@ -2,7 +2,7 @@ import { HttpHeaders } from '@angular/common/http';
 
 export class ApiConfig {
 
-  static API_DEFAULT_URL = 'http://localhost:51422/';
+  static API_DEFAULT_URL = 'http://localhost:5000/';
 
   protected headers = {
     headers: this.setHeaders()
@@ -10,7 +10,7 @@ export class ApiConfig {
 
   protected setHeaders(contentType: any = 'application/json'): HttpHeaders {
     const headersConfig = {
-      'Accept': 'application/json',
+      'Accept': 'application/json'
     };
 
     if (contentType) {

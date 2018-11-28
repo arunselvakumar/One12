@@ -8,6 +8,15 @@ import { PostModel } from '../../../models/post.model';
   styleUrls: ['./image-card.component.scss']
 })
 export class ImageCardComponent implements OnInit {
+
+  @Input() title: string;
+
+  @Input() imgSrc: string;
+
+  @Input() displayName: string;
+
+  @Input() postedTime: string;
+
   constructor() {
   }
 
