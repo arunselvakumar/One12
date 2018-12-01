@@ -1,7 +1,7 @@
 import { LinksModel } from './links.model';
-import { PostModel } from './post.model';
+import { PostResponseModel } from './post-response.model';
 
 export class PostListResponseModel {
   links: LinksModel;
-  data: PostModel[];
+  data: PostResponseModel[];
 }
