@@ -2,6 +2,7 @@
   <article *ngFor="let post of postModels">
     <app-image-card [title]="post.data.title"
                     [displayName]="post.data.id"
-                    [imgSrc]="post.data.content"></app-image-card>
+                    [imgSrc]="post.data.content"
+                    [postId]="post.data.id"></app-image-card>
   </article>
 </section>

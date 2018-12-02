@@ -3,9 +3,9 @@
 @import "../../../scss/type";
 
 .post-container {
-  padding: 1rem;
   display: grid;
-  grid-gap: 1rem;
+
+  background: $lightgrey-color;
 
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
@@ -16,15 +16,18 @@
                     "comments";
 
   .title {
+
+    padding: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
+    justify-self: center;
+    color: $white-color;
 
     grid-area: title;
   }
 
   .content {
     grid-area: content;
-    align-self: center;
     justify-self: center;
 
     img {
@@ -36,36 +39,29 @@
   .post-details {
     grid-area: post-details;
 
-    .widget {
+    color: $white-color;
+    padding: 1rem;
+
+    .post-stats-container {
+
+      padding: 0.5rem 0;
+
       display: grid;
+      grid-gap: 0.5rem;
 
-      background: $white-color;
-      padding: 0.5rem;
-      grid-template-columns: 1fr 1fr;
-
-      .user {
-        img {
-          height: 100px;
-          width: 100px;
-          border-radius: 50%;
-        }
-      }
-
-      .stats {
-        section {
-          margin: 0.5rem 0;
-        }
-      }
     }
 
     .ad-section {
       display: none;
+      padding: 1rem 0;
       grid-area: ad-section;
     }
   }
 
   .comments {
     grid-area: comments;
+    padding: 1rem;
+    background: $white-color;
   }
 }
 
@@ -75,7 +71,7 @@
     grid-template-columns: 1fr 20rem;
     grid-template-rows: auto auto auto auto;
 
-    grid-template-areas: "title title"
+    grid-template-areas: "title post-details"
     "content post-details"
     "comments comments";
 
@@ -95,6 +91,8 @@
 
 @include respond-above(md) {
   .post-container {
+    grid-template-columns: 1fr 25rem;
+
     .content {
       img {
         max-height: 620px;
@@ -105,6 +103,8 @@
 
 @include respond-above(xl) {
   .post-container {
+    grid-template-columns: 1fr 30rem;
+
     .content {
       img {
         max-height: 900px;

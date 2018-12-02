@@ -1,4 +1,4 @@
-import {CommentsListModel} from './comments-list.model';
+import { CommentsListModel } from './comments-list.model';
 
 export class PostModel {
   id: string;

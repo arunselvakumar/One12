@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ImageCardComponent implements OnInit {
 
+  @Input() postId: string;
+
   @Input() title: string;
 
   @Input() imgSrc: string;
@@ -19,5 +21,6 @@ export class ImageCardComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 }

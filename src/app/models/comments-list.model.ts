@@ -1,4 +1,4 @@
-import { LinksModel } from './links.model';
+import { LinksModel } from './linksModel';
 import { CommentModel } from './comment.model';
 
 export class CommentsListModel {
