@@ -58,10 +58,59 @@
     }
   }
 
-  .comments {
+  .comments-wrapper {
+
     grid-area: comments;
-    padding: 1rem;
+    padding: 0.5rem;
     background: $white-color;
+
+    .comments-container {
+
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: auto;
+      grid-template-areas:
+                          "comments-header"
+                          "comments-editor"
+                          "comments-list";
+
+      .header {
+
+        grid-area: comments-header;
+        font-size: 1.125rem;
+
+      }
+
+      .comments-editor-wrapper {
+
+        grid-area: comments-editor;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-rows: auto auto;
+
+        .comments-editor {
+
+          border: 1px solid rgba(34,36,38,.15);
+          color: rgba(0,0,0,.87);
+          border-radius: 0.2rem;
+          resize: none;
+        }
+
+        .btn {
+          align-self: end;
+          justify-self: end;
+        }
+
+      }
+
+      .comments-list {
+
+        grid-area: comments-list;
+
+      }
+
+    }
+
   }
 }
 
@@ -99,6 +148,21 @@
       }
     }
   }
+
+  .comments-wrapper {
+
+    .comments-container {
+
+      grid-template-columns: auto auto auto;
+
+      grid-template-areas:
+                        ". comments-header ."
+                        ". comments-editor ."
+                        ". comments-list .";
+
+    }
+
+  }
 }
 
 @include respond-above(xl) {
@@ -110,5 +174,20 @@
         max-height: 900px;
       }
     }
+  }
+
+  .comments-wrapper {
+
+    .comments-container {
+
+      grid-template-columns: auto auto auto;
+
+      grid-template-areas:
+                        ". comments-header ."
+                        ". comments-editor ."
+                        ". comments-list .";
+
+    }
+
   }
 }
