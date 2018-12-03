@@ -1,15 +1,28 @@
-.comments-container {
+.comment-container {
 
   display: grid;
-  grid-template-columns: 2rem auto;
-  grid-template-rows: 2rem auto auto;
+  grid-gap: 0.5rem;
+  grid-template-columns: 3rem auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
                       "avatar header"
-                      ". comment"
-                      ". footer";
+                      "avatar comment"
+                      "avatar footer";
 
   .comment-avatar-wrapper {
     grid-area: avatar;
+
+    .avatar {
+
+      img {
+
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 0.25rem;
+
+      }
+
+    }
   }
 
   .comment-header-wrapper {
