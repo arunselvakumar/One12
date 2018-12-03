@@ -94,6 +94,7 @@
           color: rgba(0,0,0,.87);
           border-radius: 0.2rem;
           resize: none;
+          padding: 1rem;
         }
 
         .btn {
@@ -147,18 +148,19 @@
         max-height: 620px;
       }
     }
-  }
 
-  .comments-wrapper {
+    .comments-wrapper {
 
-    .comments-container {
+      .comments-container {
 
-      grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 8fr 1fr;
 
-      grid-template-areas:
-                        ". comments-header ."
-                        ". comments-editor ."
-                        ". comments-list .";
+        grid-template-areas:
+          ". comments-header ."
+          ". comments-editor ."
+          ". comments-list .";
+
+      }
 
     }
 
@@ -174,20 +176,20 @@
         max-height: 900px;
       }
     }
-  }
 
-  .comments-wrapper {
+    .comments-wrapper {
 
-    .comments-container {
+      .comments-container {
 
-      grid-template-columns: auto auto auto;
+        grid-template-columns: 2fr 6fr 2fr;
 
-      grid-template-areas:
-                        ". comments-header ."
-                        ". comments-editor ."
-                        ". comments-list .";
+        grid-template-areas:
+          ". comments-header ."
+          ". comments-editor ."
+          ". comments-list .";
+
+      }
 
     }
-
   }
 }
