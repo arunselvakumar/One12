@@ -5,10 +5,11 @@
 
   <div class="content">
     <router-outlet></router-outlet>
+    <router-outlet name="post"></router-outlet>
 
-    <div class="addpost-button" role="button">
+    <div class="addpost-button" role="button" [routerLink]="[ {outlets: { post: 'add' } } ]">
 
-      <fa name="edit" class="plus-button" size="lg"></fa>
+        <fa name="edit" class="plus-button" size="lg"></fa>
 
     </div>
   </div>

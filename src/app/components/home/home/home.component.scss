@@ -19,7 +19,7 @@
 
     .addpost-button {
 
-      background-color: #e84e46;
+      background-color: #30338F;
       border-radius: 50%;
       color: white;
       text-align: center;
@@ -29,9 +29,9 @@
       position: fixed;
       bottom: 2rem;
       right: 2rem;
-      border: none;
       z-index: 99;
       box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+      border: none;
 
       .plus-button {
 
@@ -39,6 +39,12 @@
         top: 35%;
         margin: 0;
       }
+    }
+
+    .addpost-button:hover {
+      cursor: pointer;
+      background-color: #e84e46;
+      transition: background-color 0.2s;
     }
   }
 }

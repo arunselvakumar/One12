@@ -28,6 +28,7 @@ import { ProfileNavigationComponent } from './components/user/profile-navigation
 import { ProfileScrapbookComponent } from './components/user/profile-scrapbook/profile-scrapbook.component';
 import { ProfileScrapComponent } from './components/user/profile-scrapbook/profile-scrap/profile-scrap.component';
 import { CommentCardComponent } from './components/shared/comment-card/comment-card.component';
+import { AddPostComponent } from './components/modal/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { CommentCardComponent } from './components/shared/comment-card/comment-c
     ProfileNavigationComponent,
     ProfileScrapbookComponent,
     ProfileScrapComponent,
-    CommentCardComponent
+    CommentCardComponent,
+    AddPostComponent
   ],
   imports: [
     AdsenseModule.forRoot({ adClient: 'ca-pub-6185517953080782', adSlot: 6187145078 }),

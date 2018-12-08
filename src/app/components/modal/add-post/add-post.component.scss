@@ -1,0 +1,95 @@
+@import "../../../../scss/variables";
+
+.addpost-container {
+  display: block;
+  position: fixed;
+  z-index: 999;
+
+  left: 0;
+  top: 0;
+
+  overflow: auto;
+
+  width: 100%;
+  height: 100%;
+
+  background: #2E318E;
+  opacity: 0.988;
+
+
+  .content {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "computer templates url";
+
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+
+    align-items: center;
+    justify-items: center;
+
+    margin: 15% auto;
+
+    font-size: 1.125rem;
+    color: $white-color;
+
+    .computer-wrapper {
+      display: grid;
+      padding: 4rem;
+
+      border-radius: 0.25rem;
+
+      align-items: center;
+      justify-items: center;
+
+      background: #3943C3;
+      border: #68DFF9 2px solid;
+    }
+
+    .computer-wrapper:hover {
+      border: #FF6C17 2px solid;
+      transition: border 0.2s;
+      cursor: pointer;
+    }
+
+    .templates-wrapper {
+      display: grid;
+      padding: 6rem;
+
+      border-radius: 0.25rem;
+
+      align-items: center;
+      justify-items: center;
+
+      background: #3943C3;
+      border: #68DFF9 2px solid;
+    }
+
+    .templates-wrapper:hover {
+      border: #FF6C17 2px solid;
+      transition: border 0.2s;
+      cursor: pointer;
+    }
+
+    .url-wrapper {
+      display: grid;
+      padding: 4rem;
+
+      border-radius: 0.25rem;
+
+      align-items: center;
+      justify-items: center;
+
+      background: #3943C3;
+      border: #68DFF9 2px solid;
+    }
+
+    .url-wrapper:hover {
+      border: #FF6C17 2px solid;
+      transition: border 0.2s;
+      cursor: pointer;
+    }
+  }
+}
