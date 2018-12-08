@@ -1,8 +1,8 @@
 <section class="addpost-container">
 
-  <section class="content">
+  <section class="content" *ngIf="isSelectionButtonsVisible; else selectionTemplate">
 
-    <section class="computer-wrapper">
+    <section class="computer-wrapper" role="button" (click)="onSelectFromComputerButtonClicked()">
 
       <div class="icon">
         <fa name="laptop" size="5x"></fa>
@@ -11,7 +11,7 @@
 
     </section>
 
-    <section class="templates-wrapper">
+    <section class="templates-wrapper" role="button" (click)="onSelectFromTemplatesButtonClicked()">
 
       <div class="icon">
         <fa name="folder" size="5x"></fa>
@@ -20,7 +20,7 @@
 
     </section>
 
-    <section class="url-wrapper">
+    <section class="url-wrapper" role="button" (click)="onSelectFromUrlButtonClicked()">
 
       <div class="icon">
         <fa name="globe" size="5x"></fa>
@@ -30,5 +30,11 @@
     </section>
 
   </section>
+
+  <ng-template #selectionTemplate>
+    <section class="templates">
+      Hello World
+    </section>
+  </ng-template>
 
 </section>

@@ -7,9 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddPostComponent implements OnInit {
 
-  constructor() { }
+  isSelectionButtonsVisible: boolean;
+
+  isSelectFromComputerTemplateVisible: boolean;
+
+  isSelectFromTemplateVisible: boolean;
+
+  isSelectFromUrlVisible: boolean;
+
+  constructor() {
+    this.isSelectionButtonsVisible = true;
+  }
 
   ngOnInit() {
+  }
+
+  onSelectFromComputerButtonClicked() {
+    this.isSelectionButtonsVisible = false;
+    this.isSelectFromComputerTemplateVisible = true;
+  }
+
+  onSelectFromTemplatesButtonClicked() {
+    this.isSelectionButtonsVisible = false;
+    this.isSelectFromTemplateVisible = true;
+  }
+
+  onSelectFromUrlButtonClicked() {
+    this.isSelectionButtonsVisible = false;
+    this.isSelectFromUrlVisible = true;
   }
 
 }
