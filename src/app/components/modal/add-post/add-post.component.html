@@ -1,40 +1,68 @@
 <section class="addpost-container">
 
-  <section class="content" *ngIf="isSelectionButtonsVisible; else selectionTemplate">
+  <ng-container
+    *ngIf="isSelectionButtonsVisible; then selectionButtons; else selectionTemplate">
+  </ng-container>
 
-    <section class="computer-wrapper" role="button" (click)="onSelectFromComputerButtonClicked()">
+  <ng-template #selectionButtons>
+    <section class="content">
 
-      <div class="icon">
-        <fa name="laptop" size="5x"></fa>
-      </div>
-      From Computer
+      <section class="computer-wrapper" role="button" (click)="onSelectFromComputerButtonClicked()">
+
+        <div class="icon">
+          <fa name="laptop" size="5x"></fa>
+        </div>
+        From Computer
+
+      </section>
+
+      <section class="templates-wrapper" role="button" (click)="onSelectFromTemplatesButtonClicked()">
+
+        <div class="icon">
+          <fa name="folder" size="5x"></fa>
+        </div>
+        From Templates
+
+      </section>
+
+      <section class="url-wrapper" role="button" (click)="onSelectFromUrlButtonClicked()">
+
+        <div class="icon">
+          <fa name="globe" size="5x"></fa>
+        </div>
+        From URL
+
+      </section>
 
     </section>
-
-    <section class="templates-wrapper" role="button" (click)="onSelectFromTemplatesButtonClicked()">
-
-      <div class="icon">
-        <fa name="folder" size="5x"></fa>
-      </div>
-      From Templates
-
-    </section>
-
-    <section class="url-wrapper" role="button" (click)="onSelectFromUrlButtonClicked()">
-
-      <div class="icon">
-        <fa name="globe" size="5x"></fa>
-      </div>
-      From URL
-
-    </section>
-
-  </section>
+  </ng-template>
 
   <ng-template #selectionTemplate>
-    <section class="templates">
-      Hello World
-    </section>
+
+      <section class="computer-upload-container" *ngIf="isSelectFromComputerTemplateVisible">Computer Upload</section>
+
+      <section class="templates-upload-container" *ngIf="isSelectFromTemplateVisible">Templates Upload</section>
+
+      <section class="url-upload-wrapper" *ngIf="isSelectFromUrlVisible">
+
+        <section class="url-upload-container">
+
+          <section class="header">
+            New Post
+          </section>
+
+          <section class="icon">
+            <fa name="globe"></fa>
+          </section>
+
+          <section class="content">
+            CONTENT
+          </section>
+
+        </section>
+
+      </section>
+
   </ng-template>
 
 </section>

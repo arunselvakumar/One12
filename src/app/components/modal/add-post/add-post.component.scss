@@ -93,8 +93,46 @@
     }
   }
 
-  .templates {
+  .url-upload-wrapper {
     display: grid;
-    margin: 15% auto;
+
+    justify-items: center;
+    margin-top: 15%;
+
+    .url-upload-container {
+
+      display: grid;
+      padding: 1rem;
+
+      color: white;
+
+      border-radius: 0.25rem;
+      border: #FF6C17 2px solid;
+
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+
+      grid-template-areas:
+                          "header icon"
+                          "content content";
+
+
+      .header {
+        grid-area: header;
+        padding-bottom: 0.25rem;
+        border-bottom: #FF6C17 2px solid;
+      }
+
+      .icon {
+        grid-area: icon;
+        color: #FF6C17;
+        justify-self: end;
+      }
+
+      .content {
+        grid-area:content;
+      }
+    }
+
   }
 }
