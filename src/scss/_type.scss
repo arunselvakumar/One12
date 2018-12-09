@@ -148,3 +148,33 @@ body {
 .bold {
   font-weight: bold;
 }
+
+.form {
+  .field {
+
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    label {
+      display: inline-block;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      width: 100%;
+      min-width: 500px;
+      font-size: 1rem;
+      background: transparent;
+      color: white;
+      box-shadow: 0 0 0 0;
+      border: white 1px solid;
+      border-radius: 0.2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+  }
+}
