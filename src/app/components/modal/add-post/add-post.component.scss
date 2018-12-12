@@ -143,4 +143,19 @@
     }
 
   }
+
+  .templates-upload-wrapper {
+
+    display: grid;
+
+    justify-items: center;
+    margin-top: 10%;
+
+    .templates-upload-container {
+
+      display: grid;
+
+    }
+
+  }
 }
