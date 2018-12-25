@@ -1,0 +1,42 @@
+@import "../../../../styles.scss";
+
+.templates-list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    padding: 2rem;
+
+    div {
+        border: 0.125rem solid $turquoise-blue-color;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    div:hover {
+        border-color: $orange-color;
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 0.5s;
+    }
+}
+
+@include respond-above(xs) {
+    .templates-list-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @include respond-above(lg) {
+    .templates-list-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @include respond-above(xl) {
+    .templates-list-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
