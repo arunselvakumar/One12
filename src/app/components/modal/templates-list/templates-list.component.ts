@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PostListsRequestType } from '../../../models/enums/PostListsRequestType';
 
 @Component({
   selector: 'app-templates-list',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./templates-list.component.scss']
 })
 export class TemplatesListComponent implements OnInit {
+
+  @Input() RequestType: PostListsRequestType;
 
   constructor() { }
 

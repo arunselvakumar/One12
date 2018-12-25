@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostListsRequestType } from 'src/app/models/enums/PostListsRequestType';
 
 @Component({
   selector: 'app-add-post',
@@ -14,6 +15,8 @@ export class AddPostComponent implements OnInit {
   isSelectFromTemplateVisible: boolean;
 
   isSelectFromUrlVisible: boolean;
+
+  requestType: PostListsRequestType;
 
   constructor() {
     this.isSelectionButtonsVisible = true;
@@ -37,4 +40,15 @@ export class AddPostComponent implements OnInit {
     this.isSelectFromUrlVisible = true;
   }
 
+  onTrendingSelected() {
+    this.requestType = PostListsRequestType.Trending;
+  }
+  
+  onRecommendedSelected() {
+    this.requestType = PostListsRequestType.Recommended;
+  }
+
+  onFromNetworkSelected() {
+    this.requestType = PostListsRequestType.Network;
+  }
 }
