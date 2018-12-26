@@ -13,6 +13,7 @@ export class TemplatesListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
