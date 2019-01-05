@@ -25,7 +25,9 @@
     </div>
     <div class="image">
       <a  routerLink="/post/{{postId}}">
-        <img [src]="imgSrc">
+        <ngui-inview>
+          <img *ngIf [src]="imgSrc">
+        </ngui-inview>
       </a>
     </div>
   </section>

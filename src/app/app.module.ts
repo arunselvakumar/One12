@@ -30,6 +30,8 @@ import { ProfileScrapComponent } from './components/user/profile-scrapbook/profi
 import { CommentCardComponent } from './components/shared/comment-card/comment-card.component';
 import { AddPostComponent } from './components/modal/add-post/add-post.component';
 import { TemplatesListComponent } from './components/modal/templates-list/templates-list.component';
+import { NguiInviewModule, NguiListModule, NguiUtilsModule } from '@ngui/common';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -61,9 +63,13 @@ import { TemplatesListComponent } from './components/modal/templates-list/templa
   imports: [
     AdsenseModule.forRoot({ adClient: 'ca-pub-6185517953080782', adSlot: 6187145078 }),
     BrowserModule,
+    FormsModule,
     AngularFontAwesomeModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NguiListModule,
+    NguiInviewModule,
+    NguiUtilsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
