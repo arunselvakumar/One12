@@ -1,42 +1,89 @@
 @import "../../../../styles.scss";
 
 .templates-list-container {
+
+  display: grid;
+  overflow: auto;
+  grid-template-rows: auto 100vh;
+  justify-items: center;
+
+  .navbar {
+
+    grid-row: 1;
+
+    nav {
+
+      ul {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      li {
+        display: inline;
+        margin: 1rem;
+        padding: 0.125rem;
+      }
+
+      li:hover {
+
+        border-bottom: 2px solid #FF6C17;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+  .contents {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.5rem;
     padding: 2rem;
+    grid-row: 2;
 
     div {
-        border: 0.125rem solid $turquoise-blue-color;
+      border: 0.125rem solid $turquoise-blue-color;
 
-        img {
-            width: 100%;
-            height: auto;
-        }
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
     div:hover {
-        border-color: $orange-color;
-        cursor: pointer;
-        transform: scale(1.03);
-        transition: all 0.5s;
+      border-color: $orange-color;
+      cursor: pointer;
+      transform: scale(1.03);
+      transition: all 0.5s;
     }
+  }
+
 }
 
 @include respond-above(xs) {
-    .templates-list-container {
+  .templates-list-container {
+    .contents {
       grid-template-columns: 1fr 1fr;
     }
+  }
   }
   
   @include respond-above(lg) {
     .templates-list-container {
-      grid-template-columns: 1fr 1fr 1fr;
+      .contents {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
+
   }
   
   @include respond-above(xl) {
     .templates-list-container {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      .contents {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
     }
   }

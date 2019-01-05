@@ -43,24 +43,8 @@
 
       <section class="templates-upload-wrapper" *ngIf="isSelectFromTemplateVisible">
 
-        <section class="templates-upload-container">
-
-          <section class="navbar">
-            <nav>
-              <ul>
-                <li (click)="onTrendingSelected()">Trending</li>
-                <li (click)="onRecommendedSelected()">Recommended</li>
-                <li (click)="onFromNetworkSelected()">From Network</li>
-              </ul>
-            </nav>
-          </section>
-
-          <section class="contents">
-            <app-templates-list [RequestType]="requestType"></app-templates-list>
-          </section>
-
-        </section>
-
+          <app-templates-list></app-templates-list>
+        
       </section>
 
       <section class="url-upload-wrapper" *ngIf="isSelectFromUrlVisible">
