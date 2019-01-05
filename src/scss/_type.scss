@@ -112,8 +112,17 @@ body {
 }
 
 .border {
-  border-radius: 2px;
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(92, 39, 169, 1);
+  box-shadow: 0px 0px 0.5px 0px rgba(92, 39, 169, 1);
+}
+
+.border:hover {
+  border-color: rgba(243, 44, 69, 1);
+  box-shadow: 0px 0px 3px 0px rgba(243, 44, 69, 1);
+  transition: all 0.25s;
 }
 
 //
